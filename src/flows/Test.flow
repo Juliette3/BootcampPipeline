@@ -4,7 +4,7 @@
         <processMetadataValues>
             <name>textJson</name>
             <value>
-                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Hello I am testing &quot;}</stringValue>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Hello I am testing Right NOW&quot;}</stringValue>
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
@@ -13,11 +13,14 @@
         <locationY>200</locationY>
         <actionName>chatterPost</actionName>
         <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_1_A2</targetReference>
+        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>text</name>
             <value>
-                <stringValue>Hello I am testing </stringValue>
+                <stringValue>Hello I am testing Right NOW</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -27,6 +30,51 @@
             <name>subjectNameOrId</name>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Julia Guglia</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;hello&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A2</name>
+        <label>chatter</label>
+        <locationX>100</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>hello</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>0055f0000048KuuAAE</stringValue>
             </value>
         </inputParameters>
     </actionCalls>
@@ -84,7 +132,7 @@
         </rules>
     </decisions>
     <description>Test</description>
-    <interviewLabel>Test-1_InterviewLabel</interviewLabel>
+    <interviewLabel>Test-2_InterviewLabel</interviewLabel>
     <label>Test</label>
     <processMetadataValues>
         <name>ObjectType</name>
