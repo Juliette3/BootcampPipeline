@@ -4,11 +4,11 @@
         <processMetadataValues>
             <name>textJson</name>
             <value>
-                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;hello&quot;}</stringValue>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;indusrt&quot;}</stringValue>
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>hello</label>
+        <label>chatter</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <actionName>chatterPost</actionName>
@@ -17,7 +17,7 @@
         <inputParameters>
             <name>text</name>
             <value>
-                <stringValue>hello</stringValue>
+                <stringValue>indusrt</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -50,37 +50,37 @@
                 <processMetadataValues>
                     <name>inputDataType</name>
                     <value>
-                        <stringValue>Number</stringValue>
+                        <stringValue>Picklist</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>leftHandSideType</name>
                     <value>
-                        <stringValue>Number</stringValue>
+                        <stringValue>Picklist</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>operatorDataType</name>
                     <value>
-                        <stringValue>Number</stringValue>
+                        <stringValue>String</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>rightHandSideType</name>
                     <value>
-                        <stringValue>Number</stringValue>
+                        <stringValue>Picklist</stringValue>
                     </value>
                 </processMetadataValues>
-                <leftValueReference>myVariable_current.NumberOfEmployees</leftValueReference>
+                <leftValueReference>myVariable_current.Industry</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <numberValue>10.0</numberValue>
+                    <stringValue>Agriculture</stringValue>
                 </rightValue>
             </conditions>
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>name</label>
+            <label>industry</label>
         </rules>
     </decisions>
     <interviewLabel>test_2-1_InterviewLabel</interviewLabel>
