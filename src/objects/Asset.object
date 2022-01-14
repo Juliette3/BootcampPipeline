@@ -149,6 +149,14 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Iphone__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Iphone</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>IsCompetitorProduct</fullName>
         <trackHistory>false</trackHistory>
     </fields>
