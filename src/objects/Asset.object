@@ -145,6 +145,14 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>HelloWorld__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HelloWorld</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>InstallDate</fullName>
         <trackHistory>false</trackHistory>
     </fields>
